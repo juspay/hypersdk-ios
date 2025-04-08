@@ -61,7 +61,7 @@ The MerchantConfig.json contains the clientIds which helps the Assets plugin to 
 ```javascript
 {
    "clientConfigs": {
-		"your-client-id": {}
+	"your-client-id": {}
    }
 }
 ```
