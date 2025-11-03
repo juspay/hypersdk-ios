@@ -42,11 +42,16 @@ Select the app target for **Provide build settings from**
 
 Paste the below shell script:
 
-```ruby
-if [[ "${ACTION}" == "clean" ]]; then
-	cd "${PROJECT_DIR}"
-	echo "Running Fuse.rb script..."
-	ruby "${BUILD_DIR%Build/*}SourcePackages/artifacts/hypersdk-ios/HyperSDK/Fuse.rb"
+```shell
+PACKAGE_DIR="${BUILD_DIR%Build/*}SourcePackages/artifacts/hypersdk-ios/HyperSDK"
+XCFRAMEWORK_DIR="${PACKAGE_DIR}/HyperSDK.xcframework"
+FUSE_MARKER="${XCFRAMEWORK_DIR}/.fuse_completed"
+
+if [ ! -f "$FUSE_MARKER" ] || [ "${ACTION}" == "clean" ]; then
+    cd "${PROJECT_DIR}"
+    echo "Running Fuse.rb script..."
+    ruby "${PACKAGE_DIR}/Fuse.rb"
+    touch "$FUSE_MARKER"
 fi
 ```
 
