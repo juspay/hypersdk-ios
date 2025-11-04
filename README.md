@@ -45,14 +45,13 @@ Paste the below shell script:
 ```shell
 PACKAGE_DIR="${BUILD_DIR%Build/*}SourcePackages/artifacts/hypersdk-ios/HyperSDK"
 XCFRAMEWORK_DIR="${PACKAGE_DIR}/HyperSDK.xcframework"
+FUSE_SCRIPT="${PACKAGE_DIR}/Fuse.rb"
 FUSE_MARKER="${XCFRAMEWORK_DIR}/.fuse_completed"
+VALIDATION_SCRIPT="${PACKAGE_DIR}/ValidateHyperSDK.rb"
 
-if [ ! -f "$FUSE_MARKER" ] || [ "${ACTION}" == "clean" ]; then
-    cd "${PROJECT_DIR}"
-    echo "Running Fuse.rb script..."
-    ruby "${PACKAGE_DIR}/Fuse.rb"
-    touch "$FUSE_MARKER"
-fi
+[ ! -f "$FUSE_MARKER" ] || [ "${ACTION}" == "clean" ] && { cd "${PROJECT_DIR}"; echo "Running Fuse.rb script..."; ruby "$FUSE_SCRIPT"; }
+
+ruby "$VALIDATION_SCRIPT" && touch "$FUSE_MARKER" || exit 1
 ```
 
 This Script will be executed whenever you do **Clean Build Folder**. 
