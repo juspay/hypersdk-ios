@@ -19,8 +19,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "HyperSDK",
-            url: "https://public.releases.juspay.in/release/ios/hyper-sdk/2.2.5.9/HyperSDK.zip",
-            checksum: "336fc89e082bfc5aeedc8e65f6bf2659a7f9f9bcc4510dcbf4e306829e050959"
+            url: "https://public.releases.juspay.in/release/ios/hyper-sdk/2.2.5.10/HyperSDK.zip",
+            checksum: "18e5c523c6fd4d2a27359b5a54f3784e304529b44671aca89a0ee1776e6f66ac"
         ),
         .binaryTarget(
             name: "Airborne",
