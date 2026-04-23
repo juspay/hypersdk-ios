@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "HyperSDK",
     platforms: [
-        .iOS(.v12)
+        .iOS(.v13)
     ],
     products: [
         .library(
@@ -19,13 +19,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "HyperSDK",
-            url: "https://public.releases.juspay.in/release/ios/hyper-sdk/2.2.7.1/HyperSDK.zip",
-            checksum: "0d4ee4ec986c8c73c1bb5c8de03372410bd807c4e1c5f4442b783de63ea135df"
+            url: "https://public.releases.juspay.in/release/ios/hyper-sdk/2.2.7.2/HyperSDK.zip",
+            checksum: "63e7b5c80a31e95878ea8006ed57c99dc81b341b9f4238248dfa285e73af03ed"
         ),
         .binaryTarget(
             name: "Airborne",
-            url: "https://public.releases.juspay.in/release/ios/airborne/0.30.1/Airborne.zip",
-            checksum: "106c7d8780c0846b13c03ad412f09c0b9ed6bc0c90eec69a5467e0f447379b0b"
+            url: "https://public.releases.juspay.in/release/ios/airborne/0.33.0/Airborne.zip",
+            checksum: "f1b60ec73dc66a33dde6b786bfe967e7a240aa42ce6f3c1fadae30a0d5056d45"
         ),
         .target(
             name: "HyperSDKDependencies",
