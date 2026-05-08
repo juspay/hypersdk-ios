@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "HyperSDK",
-            targets: ["HyperSDK", "Airborne", "HyperSDKDependencies"]
+            targets: ["HyperSDK", "AirborneSDK", "HyperSDKDependencies"]
         )
     ],
     dependencies: [
@@ -19,13 +19,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "HyperSDK",
-            url: "https://public.releases.juspay.in/release/ios/hyper-sdk/2.2.7.3/HyperSDK.zip",
-            checksum: "0fd69bcce3c3dbd5ebd64ac8c45c6542b17f516259370c3f68ff877748807cb7"
+            url: "https://public.releases.juspay.in/release/ios/hyper-sdk/2.2.7.4/HyperSDK.zip",
+            checksum: "2bc82091fb89a6c889d741a89042de9ea9fcdbec58ec8de1ed0d15d212de90ce"
         ),
         .binaryTarget(
-            name: "Airborne",
-            url: "https://public.releases.juspay.in/release/ios/airborne/0.33.0/Airborne.zip",
-            checksum: "f1b60ec73dc66a33dde6b786bfe967e7a240aa42ce6f3c1fadae30a0d5056d45"
+            name: "AirborneSDK",
+            url: "https://public.releases.juspay.in/release/ios/airborne/0.34.0/Airborne.zip",
+            checksum: "16e36306d9b7fcdff667cf245ab6586b97b5d4666bc28782a2a4710e4f07b97d"
         ),
         .target(
             name: "HyperSDKDependencies",
