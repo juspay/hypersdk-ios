@@ -14,13 +14,13 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "JuspaySafeBrowser", url: "https://github.com/juspay/juspaysafebrowser-ios.git", .exact("0.1.94")),
-        .package(name: "HyperCore", url: "https://github.com/juspay/hypercore-ios.git", .exact("1.0.4"))
+        .package(name: "HyperCore", url: "https://github.com/juspay/hypercore-ios.git", .exact("1.0.5"))
     ],
     targets: [
         .binaryTarget(
             name: "HyperSDK",
-            url: "https://public.releases.juspay.in/release/ios/hyper-sdk/2.2.8/HyperSDK.zip",
-            checksum: "a4629ff33d97ed63c7ae54085bf0bf9752b72aec9bef580996483ac8eca98c1d"
+            url: "https://public.releases.juspay.in/release/ios/hyper-sdk/2.2.8.1/HyperSDK.zip",
+            checksum: "55a9e8cd68c9d74790a03be8449b943c22ea82a6ba308b24005b1d3efd0482ab"
         ),
         .binaryTarget(
             name: "AirborneSDK",
