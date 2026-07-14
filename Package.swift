@@ -10,6 +10,18 @@ let package = Package(
         .library(
             name: "HyperSDK",
             targets: ["HyperSDK", "AirborneSDK", "HyperSDKDependencies"]
+        ),
+        .library(
+            name: "HyperUPI",
+            targets: ["HyperUPI"]
+        ),
+        .library(
+            name: "HyperQR",
+            targets: ["HyperQR"]
+        ),
+        .library(
+            name: "HyperQR",
+            targets: ["HyperQR"]
         )
     ],
     dependencies: [
@@ -33,6 +45,21 @@ let package = Package(
                 .product(name: "JuspaySafeBrowser", package: "JuspaySafeBrowser"),
                 .product(name: "HyperCore", package: "HyperCore")
             ]
+        ),
+        .binaryTarget(
+            name: "HyperUPI",
+            url: "https://public.releases.juspay.in/release/ios/hyper-sdk/2.2.8.2/HyperUPI.zip",
+            checksum: "9c31d8ecd111fe64d143464e31b8ed171db730ca02d09991690bf3f87cb88d6c"
+        ),
+        .binaryTarget(
+            name: "HyperQR",
+            url: "https://public.releases.juspay.in/release/ios/hyper-sdk/2.2.8.2/HyperQR.zip",
+            checksum: "1d8ee6d99c9ddbed70de8a27925733a42f7431a3e6ff624552f318efaf41411b"
+        ),
+        .binaryTarget(
+            name: "HyperCardScan",
+            url: "https://public.releases.juspay.in/release/ios/hyper-sdk/2.2.8.2/HyperCardScan.zip",
+            checksum: "6f77c436715a03a6e4d0405cb547e53ea67355915d194e825dbc9e113f74de94"
         )
     ]
 )
