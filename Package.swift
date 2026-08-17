@@ -27,8 +27,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "AirborneSDK",
-            url: "https://public.releases.juspay.in/release/ios/airborne/0.37.0/Airborne.zip",
-            checksum: "c46f082129688da7a1b8a37a5867b29f6b2e1104ab210d1f1904a94e9794b97a"
+            url: "https://public.releases.juspay.in/release/ios/airborne/0.42.1/Airborne.zip",
+            checksum: "71931bc217857c2c104a4e39befea8754e6be9dfb76ef0aa1a2d5e8ce4cafbd0"
         ),
         .binaryTarget(
             name: "JuspaySafeBrowser",
