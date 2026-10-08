@@ -29,13 +29,13 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(name: "HyperCore", url: "https://github.com/juspay/hypercore-ios.git", .exact("1.0.6"))
+        .package(name: "HyperCore", url: "https://github.com/juspay/hypercore-ios.git", .exact("1.0.7"))
     ],
     targets: [
         .binaryTarget(
             name: "HyperSDK",
-            url: "https://public.releases.juspay.in/release/ios/hyper-sdk/2.2.9.6/HyperSDK.zip",
-            checksum: "7c816ff08b01263b7a8244479a88f672aeb3b0478faeaec9ebb99b575a56375a"
+            url: "https://public.releases.juspay.in/release/ios/hyper-sdk/2.2.9.7/HyperSDK.zip",
+            checksum: "af317d27d7e30edcf4bce9a5e6fe88dbb3df861f403b1da23bfbd63a7d194809"
         ),
         .binaryTarget(
             name: "AirborneSDK",
