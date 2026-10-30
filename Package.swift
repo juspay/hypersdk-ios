@@ -34,13 +34,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "HyperSDK",
-            url: "https://public.releases.juspay.in/release/ios/hyper-sdk/2.2.9.7/HyperSDK.zip",
-            checksum: "af317d27d7e30edcf4bce9a5e6fe88dbb3df861f403b1da23bfbd63a7d194809"
+            url: "https://public.releases.juspay.in/release/ios/hyper-sdk/2.2.9.8/HyperSDK.zip",
+            checksum: "110046aa9490b17cb0b9eb2dfd97096638f8e5dca205f8f0eadf22e26918a3bb"
         ),
         .binaryTarget(
             name: "AirborneSDK",
-            url: "https://public.releases.juspay.in/release/ios/airborne/0.43.4/Airborne.zip",
-            checksum: "5c2ee1639fdf508baeeaa8ba1047f51f75e79dc498b31fb43035400751ad8c88"
+            url: "https://public.releases.juspay.in/release/ios/airborne/0.45.0/Airborne.zip",
+            checksum: "88b5b587df39c41addb942be019cce65e98e0ac90357a2104559056fb6186109"
         ),
         .binaryTarget(
             name: "JuspaySafeBrowser",
